@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="xmyu@10.160.22.46:2222 key" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+    <option name="confirmBeforeUploading" value="false" />
+    <serverData>
+      <paths name="hgd">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/xmyu/mmm-eval" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="translate">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/xmyu/mmm-eval" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="xmyu@10.160.22.46:2222 key">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/mmm-eval" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="xmyu@10.160.22.46:2222 key (3)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/mmm-eval" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

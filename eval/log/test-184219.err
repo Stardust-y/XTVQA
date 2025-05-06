@@ -1,0 +1,13 @@
+/home/xmyu/anaconda3/envs/qwen/lib/python3.9/site-packages/transformers/utils/generic.py:260: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  torch.utils._pytree._register_pytree_node(
+/home/xmyu/anaconda3/envs/qwen/lib/python3.9/site-packages/transformers/utils/generic.py:260: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  torch.utils._pytree._register_pytree_node(
+Try importing flash-attention for faster inference...
+Warning: import flash_attn rotary fail, please install FlashAttention rotary to get higher efficiency https://github.com/Dao-AILab/flash-attention/tree/main/csrc/rotary
+Warning: import flash_attn rms_norm fail, please install FlashAttention layer_norm to get higher efficiency https://github.com/Dao-AILab/flash-attention/tree/main/csrc/layer_norm
+Warning: import flash_attn fail, please install FlashAttention to get higher efficiency https://github.com/Dao-AILab/flash-attention
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:08,  1.22s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:07,  1.28s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:06,  1.30s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:05<00:05,  1.31s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:06<00:03,  1.31s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:07<00:02,  1.32s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:09<00:01,  1.32s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.16s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.25s/it]
+/home/xmyu/anaconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:367: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/xmyu/anaconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:377: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(

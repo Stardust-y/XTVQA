@@ -1,0 +1,41 @@
+Question: Did the authors try stacking multiple convolutional layers? Answer: 't know
+Question: 作者是否尝试堆叠多个卷积层？ Answer: 未提及
+'three' 与 'three' 是否有相同的含义？ Answer: 不同
+```python
+# 导入所需的库
+import torch
+from torch import nn
+
+# 定义一个简单的神经网络模型
+class Net(nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+        # 添加两个卷积层和一个全连接层
+        self.conv1 = nn.Conv2d(1, 32, kernel_size=5)
+        self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
+        self.conv2 = nn.Conv2d(32, 64, kernel_size=5)
+        self.fc1 = nn.Linear(64 * 7 * 7, 128)
+        self.fc2 = nn.Linear(128, 10)
+
+    def forward(self, x):
+        # 对输入进行卷积操作
+        x = self.pool(F.relu(self.conv1(x)))
+        x = self.pool(F.relu(self.conv2(x)))
+        # 将特征图展平为一维向量
+        x = x.view(-1, 64 * 7 * 7)
+        # 进行全连接操作
+        x = F.relu(self.fc1(x))
+        x = self.fc2(x)
+        return x
+```
+
+```python
+# 创建一个实例并加载预训练的权重
+model = Net()
+model.load_state_dict(torch.load('model.pth'))
+
+# 使用测试数据进行预测
+inputs = torch.randn(1, 1, 32, 32)
+outputs = model(inputs)
+print(outputs.shape)  # 输出：torch.Size([1, 10])
+```

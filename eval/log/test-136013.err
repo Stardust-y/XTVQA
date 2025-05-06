@@ -1,0 +1,3 @@
+usage: eval_xtreme.py [-h] [--dataset DATASET] [--savedir SAVEDIR]
+                      [--checkpoint CHECKPOINT] [--eval EVAL]
+eval_xtreme.py: error: unrecognized arguments: --checkpoints ../checkpoints/Qwen-VL

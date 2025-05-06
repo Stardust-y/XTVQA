@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/MiniCPM-V" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/SNLI-VE" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/models/CogVLM" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/models/LAVIS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/models/LLaVA" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/models/MiniCPM-V" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/models/Monkey" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/models/Qwen-VL" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/models/mPLUG-Owl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/poe-api-wrapper" vcs="Git" />
+  </component>
+</project>

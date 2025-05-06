@@ -1,0 +1,26 @@
+/home/xmyu/anaconda3/envs/qwen/lib/python3.9/site-packages/transformers/utils/generic.py:260: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  torch.utils._pytree._register_pytree_node(
+/home/xmyu/anaconda3/envs/qwen/lib/python3.9/site-packages/transformers/utils/generic.py:260: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  torch.utils._pytree._register_pytree_node(
+Try importing flash-attention for faster inference...
+Warning: import flash_attn rotary fail, please install FlashAttention rotary to get higher efficiency https://github.com/Dao-AILab/flash-attention/tree/main/csrc/rotary
+Warning: import flash_attn rms_norm fail, please install FlashAttention layer_norm to get higher efficiency https://github.com/Dao-AILab/flash-attention/tree/main/csrc/layer_norm
+Warning: import flash_attn fail, please install FlashAttention to get higher efficiency https://github.com/Dao-AILab/flash-attention
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:08,  1.21s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:02<00:07,  1.23s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:03<00:06,  1.25s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:04<00:05,  1.25s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:06<00:03,  1.26s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:07<00:02,  1.27s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:08<00:01,  1.26s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.12s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:09<00:00,  1.20s/it]
+/home/xmyu/anaconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:367: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/xmyu/anaconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:377: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+/home/xmyu/anaconda3/envs/qwen/lib/python3.9/site-packages/transformers/utils/generic.py:260: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  torch.utils._pytree._register_pytree_node(
+/home/xmyu/anaconda3/envs/qwen/lib/python3.9/site-packages/transformers/utils/generic.py:260: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  torch.utils._pytree._register_pytree_node(
+Try importing flash-attention for faster inference...
+Warning: import flash_attn rotary fail, please install FlashAttention rotary to get higher efficiency https://github.com/Dao-AILab/flash-attention/tree/main/csrc/rotary
+Warning: import flash_attn rms_norm fail, please install FlashAttention layer_norm to get higher efficiency https://github.com/Dao-AILab/flash-attention/tree/main/csrc/layer_norm
+Warning: import flash_attn fail, please install FlashAttention to get higher efficiency https://github.com/Dao-AILab/flash-attention
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:03<00:26,  3.80s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:09<00:30,  5.16s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:16<00:28,  5.61s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:22<00:23,  5.81s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:28<00:17,  5.97s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:34<00:12,  6.06s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:40<00:05,  5.99s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:42<00:00,  4.66s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:42<00:00,  5.29s/it]
+/home/xmyu/anaconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:367: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/xmyu/anaconda3/envs/qwen/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:377: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(

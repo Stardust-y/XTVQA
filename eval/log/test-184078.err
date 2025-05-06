@@ -1,0 +1,94 @@
+Try importing flash-attention for faster inference...
+Warning: import flash_attn rms_norm fail, please install FlashAttention layer_norm to get higher efficiency https://github.com/Dao-AILab/flash-attention/tree/main/csrc/layer_norm
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:02<00:15,  2.25s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:09,  1.64s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:04<00:07,  1.45s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:05<00:05,  1.37s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:07<00:03,  1.32s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:08<00:02,  1.29s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:09<00:01,  1.27s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.31s/it]
+/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:367: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:377: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/xmyu/mmm-eval/eval/./eval_monkey.py", line 69, in <module>
+    pred = model.generate(
+  File "/home/xmyu/.cache/huggingface/modules/transformers_modules/Qwen-7B-Chat/modeling_qwen.py", line 1259, in generate
+    return super().generate(
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/transformers/generation/utils.py", line 1596, in generate
+    return self.greedy_search(
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/transformers/generation/utils.py", line 2444, in greedy_search
+    outputs = self(
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/xmyu/.cache/huggingface/modules/transformers_modules/Qwen-7B-Chat/modeling_qwen.py", line 1043, in forward
+    transformer_outputs = self.transformer(
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/xmyu/.cache/huggingface/modules/transformers_modules/Qwen-7B-Chat/modeling_qwen.py", line 891, in forward
+    outputs = block(
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/xmyu/.cache/huggingface/modules/transformers_modules/Qwen-7B-Chat/modeling_qwen.py", line 610, in forward
+    attn_outputs = self.attn(
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/xmyu/.cache/huggingface/modules/transformers_modules/Qwen-7B-Chat/modeling_qwen.py", line 499, in forward
+    attn_output = self.core_attention_flash(q, k, v, attention_mask=attention_mask)
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/xmyu/.cache/huggingface/modules/transformers_modules/Qwen-7B-Chat/modeling_qwen.py", line 191, in forward
+    output = flash_attn_func(q, k, v, dropout_p, softmax_scale=self.softmax_scale, causal=self.causal)
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/flash_attn/flash_attn_interface.py", line 705, in flash_attn_func
+    return FlashAttnFunc.apply(
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/torch/autograd/function.py", line 506, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/flash_attn/flash_attn_interface.py", line 434, in forward
+    out, q, k, v, out_padded, softmax_lse, S_dmask, rng_state = _flash_attn_forward(
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/flash_attn/flash_attn_interface.py", line 47, in _flash_attn_forward
+    out, q, k, v, out_padded, softmax_lse, S_dmask, rng_state = flash_attn_cuda.fwd(
+RuntimeError: FlashAttention only supports Ampere GPUs or newer.
+Try importing flash-attention for faster inference...
+Warning: import flash_attn rms_norm fail, please install FlashAttention layer_norm to get higher efficiency https://github.com/Dao-AILab/flash-attention/tree/main/csrc/layer_norm
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:13,  1.88s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:03<00:08,  1.48s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:04<00:06,  1.36s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:05<00:05,  1.31s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:06<00:03,  1.29s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:08<00:02,  1.27s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:09<00:01,  1.26s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:10<00:00,  1.26s/it]
+/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:367: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:377: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/xmyu/mmm-eval/eval/./eval_monkey.py", line 69, in <module>
+    pred = model.generate(
+  File "/home/xmyu/.cache/huggingface/modules/transformers_modules/Qwen-7B-Chat/modeling_qwen.py", line 1259, in generate
+    return super().generate(
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/transformers/generation/utils.py", line 1596, in generate
+    return self.greedy_search(
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/transformers/generation/utils.py", line 2444, in greedy_search
+    outputs = self(
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/xmyu/.cache/huggingface/modules/transformers_modules/Qwen-7B-Chat/modeling_qwen.py", line 1043, in forward
+    transformer_outputs = self.transformer(
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/xmyu/.cache/huggingface/modules/transformers_modules/Qwen-7B-Chat/modeling_qwen.py", line 891, in forward
+    outputs = block(
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/xmyu/.cache/huggingface/modules/transformers_modules/Qwen-7B-Chat/modeling_qwen.py", line 610, in forward
+    attn_outputs = self.attn(
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/xmyu/.cache/huggingface/modules/transformers_modules/Qwen-7B-Chat/modeling_qwen.py", line 499, in forward
+    attn_output = self.core_attention_flash(q, k, v, attention_mask=attention_mask)
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/xmyu/.cache/huggingface/modules/transformers_modules/Qwen-7B-Chat/modeling_qwen.py", line 191, in forward
+    output = flash_attn_func(q, k, v, dropout_p, softmax_scale=self.softmax_scale, causal=self.causal)
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/flash_attn/flash_attn_interface.py", line 705, in flash_attn_func
+    return FlashAttnFunc.apply(
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/torch/autograd/function.py", line 506, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/flash_attn/flash_attn_interface.py", line 434, in forward
+    out, q, k, v, out_padded, softmax_lse, S_dmask, rng_state = _flash_attn_forward(
+  File "/home/xmyu/anaconda3/envs/monkey/lib/python3.9/site-packages/flash_attn/flash_attn_interface.py", line 47, in _flash_attn_forward
+    out, q, k, v, out_padded, softmax_lse, S_dmask, rng_state = flash_attn_cuda.fwd(
+RuntimeError: FlashAttention only supports Ampere GPUs or newer.

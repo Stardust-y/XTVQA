@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0ba8a9cd-8137-490a-a3c9-1e5ef2297e30" name="translate">
+        <fileTransfer rootFolder="/data" accessType="SFTP" host="8.222.187.189" port="22" sshConfigId="4a173b16-2ffd-4287-a89e-97686200afb4" sshConfig="root@8.222.187.189:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="1660c098-7b77-4ad4-8ef7-388ad762a263" name="hgd">
+        <fileTransfer rootFolder="/share/home/fengxiaocheng" accessType="SFTP" host="219.217.229.12" port="22" sshConfigId="4588313d-f4de-480e-b049-6b7babc0232a" sshConfig="fengxiaocheng@219.217.229.12:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
